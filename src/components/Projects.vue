@@ -1,7 +1,7 @@
 <template >
   <div style="color:white;width: 90%;" class="center">
     <p style="font-size:75px">Projects</p>
-    <table style="border-spacing:  75px 30px;border-collapse: separate;" class="center" v-scrollanimation>
+    <table style="border-spacing:  75px 40px;border-collapse: separate;" class="center" v-scrollanimation>
 
       <tr>
         <td v-for="project in projectsRow1" :key="project.id" width="33%" style="border-top: 2px solid white;">
