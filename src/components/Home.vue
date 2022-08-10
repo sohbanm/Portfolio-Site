@@ -11,11 +11,11 @@
       </v-col>
 
       <v-col>
-        <span style="font-size:90px;text-align: left;">
+        <span style="font-size:5.7em;text-align: left;">
         
         Sohban Elahi Malik
         </span>
-        <div style="text-align:left;margin-left: 150px;">
+        <div style="text-align:left;margin-left: 18vh;">
           <h2>York University '25, HBsc. Computer Science Student</h2>
           <!-- make name of university a hyperlink to yorks site -->
           <p>
@@ -51,22 +51,18 @@
 *{
   font-family: 'Prompt', sans-serif;
 }
-h1{
-  color: white;
-  font-size: 35px;
-}
 .center {
   margin: auto;
   width: 50%;;
-  padding: 10px;
+  padding: 0.8em;
   text-align: center;
 }
 .iconButton{
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 0.1em solid rgba(255, 255, 255, 0);
 }
 .iconButton:hover{
   background: #19bc8b52;
   color:rgb(0, 0, 0);
-  border: 1px solid #ccc;
+  border: 0.1em solid #ccc;
 }
 </style>

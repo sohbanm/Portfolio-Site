@@ -1,18 +1,18 @@
-<template>  
+<template> 
   <v-app id="main"> 
     <v-app-bar
       class="primary"
       app
       dark
       shrink-on-scroll
-      height="70px"
+      min-height="10vh"
       scroll-target="#scrolling-techniques-5"
-      scroll-threshold="500"
+      scroll-threshold="1"
     >
       <v-row>
         <v-col>
           <v-app-bar-title>
-            <h1 class="font" style="margin-left:200px"><b>Portfolio</b></h1>
+            <h1 class="font" style="margin-left:30vh"><b>Portfolio</b></h1>
           </v-app-bar-title>
         </v-col>
         <div v-for="button in items" :key=items.id>
@@ -20,14 +20,11 @@
             
             <a :href=button.ref :target=button.target style="color:white">
               <button class="raise">
-                <v-icon class="v-icon">{{button.icon}}</v-icon>{{button.title}}
+                <v-icon class="v-icon" >{{button.icon}}</v-icon>{{button.title}}
               </button>
             </a>
-            
-
           </v-col>
         </div>
-      <hr class="rounded">
       </v-row>      
     </v-app-bar>
 
@@ -36,16 +33,22 @@
     <v-main class="main" style="color:white">
       <Home id="Home"></Home>
 
-      <div style="text-align:center;margin: 150px 0 250px 0;">
+      <div style="text-align:center;margin: 25vh 0 25vh 0;">
         <a href="#Projects" style="color:white" class="scroll">Projects</a>
       </div>
 
       <Projects id="Projects"></Projects>
-      <!-- Delete Line below later -->
-      <div style="margin:200px 0 400px 0"></div> 
+
+      <div style="text-align:center;">
+        <a href="#Contact" style="color:white" class="scroll">Contact</a>
+      </div>
+      <!-- This line is for spacing -->
+      <div style="margin:65vh 0 0 0"></div> 
+
+      <Footer id="Contact"></Footer>
     </v-main>
 
-    <Footer id="Contact"></Footer>
+    
   </v-app>
 </template>
 
@@ -83,35 +86,30 @@ export default {
   
   a.scroll {
     text-decoration: none;
-    border: 1px solid white;
-    padding: 3px;
+    border: 0.1em solid white;
+    padding: 0.2em;
   }
   a.scroll:hover {
     text-decoration: none;
     background-color: #19bc8b52;
-    border: 1px solid #19bc8b;
-    padding: 3px;
+    border: 0.1em solid #19bc8b;
+    padding: 0.2em;
   } 
   
   #down {
     margin-top: 100%;
     padding-bottom: 25%;
   } 
-  hr.rounded {
-    border-top: 3px solid rgb(149, 149, 149);
-    border-radius: 5px;
-    margin: 0px 30px 50px 30px;
-  }
   h1{
     font-family: Monolith-This-Font, Verdana, sans-serif;
   }
   button{
-    margin: 5px;
-    border: 5px;
+    margin: 0.25em;
+    border: 0.25em;
     align-content: center;
   }
   .v-icon{
-    margin: 0 5px 0 5px;
+    margin: 0 0.2em 0 0.2em;
   }
   .font{
     font-family: 'Raleway', sans-serif;

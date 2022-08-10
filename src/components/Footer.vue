@@ -16,7 +16,7 @@
 
             <v-btn class="mx-4" color="grey" onMouseOver="this.style.color='#00F2FF'" v-scrollanimation>
                 <a href="mailto:sohbanelahimalik@gmail.com">
-                    <v-icon size="30px" style="color:black;">
+                    <v-icon size="2.5em" style="color:black;">
                     mdi-email
                     </v-icon>
                 </a>
@@ -32,7 +32,7 @@
                 v-scrollanimation
             >
             <a :href=icon.link target="_blank">
-              <v-icon size="30px">
+              <v-icon size="2.5em">
                 {{ icon.icon }}
               </v-icon>
             </a>
@@ -61,7 +61,7 @@ export default {
 
 strong{
     color:black;    
-    margin-left: 200px;
+    margin-left: 30vh;
     font-family: 'Raleway', sans-serif;
 }
 a{
