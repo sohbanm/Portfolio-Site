@@ -1,0 +1,80 @@
+<template>
+    <v-footer
+    id="Contact"
+    dark
+    class="white"
+    padless
+    >
+      <v-card
+        class="flex"
+        
+      >
+        <v-card-title class="white">
+            <strong>Contact Info</strong>
+
+            <v-spacer></v-spacer>
+
+            <v-btn class="mx-4" color="grey" onMouseOver="this.style.color='#00F2FF'" v-scrollanimation>
+                <a href="mailto:sohbanelahimalik@gmail.com">
+                    <v-icon size="30px" style="color:black;">
+                    mdi-email
+                    </v-icon>
+                </a>
+            </v-btn>
+
+          
+            <v-btn
+                v-for="icon in icons"
+                :key="icon"
+                class="mx-4"
+                color="grey"
+                onMouseOver="this.style.color='#00F2FF'"
+                v-scrollanimation
+            >
+            <a :href=icon.link target="_blank">
+              <v-icon size="30px">
+                {{ icon.icon }}
+              </v-icon>
+            </a>
+          </v-btn>
+
+        </v-card-title>
+
+      </v-card>
+    </v-footer>
+</template>
+
+<script>
+
+export default {
+  data: () => ({ 
+    icons: [
+      {id:1, icon:'mdi-github', link: 'https://github.com/sohbanm'},
+      {id:2, icon: 'mdi-linkedin', link: 'https://www.linkedin.com/in/sohban-e-malik/'},
+    ]
+  }),
+};
+</script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+strong{
+    color:black;    
+    margin-left: 200px;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.before-enter{
+  opacity: 0;
+  transform: scale(.5) rotateZ(-25deg);
+  transition: all 1s ease-out;
+}
+.enter {
+  opacity: 1;
+  transform: scale(1) rotateZ(0deg);
+}
+
+</style>
