@@ -150,7 +150,7 @@
 .before-enter{
   opacity: 0;
   transform: translateY(12vh);
-  transition: all 3s ease-out;
+  transition: all 2s ease-out;
 }
 .enter {
   opacity: 1;

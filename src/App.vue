@@ -5,9 +5,9 @@
       app
       dark
       shrink-on-scroll
-      min-height="10vh"
       scroll-target="#scrolling-techniques-5"
       scroll-threshold="1"
+      width="100%"
     >
       <v-row>
         <v-col>
@@ -33,13 +33,15 @@
     <v-main class="main" style="color:white">
       <Home id="Home"></Home>
 
-      <div style="text-align:center;margin: 25vh 0 25vh 0;">
+      <div style="text-align:center;margin: 25vh 0 0 0;">
         <a href="#Projects" style="color:white" class="scroll">Projects</a>
       </div>
 
-      <Projects id="Projects"></Projects>
+      <div id="Projects" style="text-align:center;margin: 25vh 0 0 0;"><p style="opacity:0">L</p> </div>
 
-      <div style="text-align:center;">
+      <Projects></Projects>
+
+      <div style="text-align:center;margin: 0vh 0 0 0;">
         <a href="#Contact" style="color:white" class="scroll">Contact</a>
       </div>
       <!-- This line is for spacing -->
@@ -114,4 +116,9 @@ export default {
   .font{
     font-family: 'Raleway', sans-serif;
   }
+  v-app-bar {
+    min-height: 10vh;
+  }
+  // @media(min-){}
+
 </style>
