@@ -37,7 +37,7 @@
         <a href="#Projects" style="color:white" class="scroll">Projects</a>
       </div>
 
-      <div id="Projects" style="text-align:center;margin: 25vh 0 0 0;"><p style="opacity:0">L</p> </div>
+      <div id="Projects" style="text-align:center;margin: 45vh 0 10vh 0;"><p style="opacity:0">L</p> </div>
 
       <Projects></Projects>
 
