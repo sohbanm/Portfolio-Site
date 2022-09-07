@@ -5,7 +5,7 @@
       <v-col cols="1">
         <div v-for="social in icons" :key=icons.id>
           <a :href=social.link target="_blank">
-            <button class="iconButton"><v-icon size="100" style="color:white">{{social.icon}}</v-icon> </button>
+            <button class="iconButton" style="padding:0"><v-icon size="100" style="color:white;">{{social.icon}}</v-icon> </button>
           </a>
         </div>
       </v-col>
