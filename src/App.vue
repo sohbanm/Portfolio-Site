@@ -9,7 +9,7 @@
       scroll-threshold="1"
     >
       <v-row>
-        <v-col fill-height>
+        <v-col>
           <h1><b>Portfolio</b></h1>
         </v-col>
 
@@ -70,7 +70,7 @@ export default {
       {id: 1, title: 'Home', icon: 'mdi-home-outline', ref: "#", target: ""}, //Need to Link these buttons to scroll later
       {id: 2, title: 'Projects', icon: "mdi-xml", ref: "#Projects", target: ""},
       {id: 3, title: 'Contact', icon: 'mdi-card-account-mail', ref: "#Contact", target: ""},
-      {id: 4, title: 'Resume', icon: 'mdi-file-account', ref: "https://1drv.ms/b/s!AoUvcKZ5_MGigtVqHmtFOQkwlGXRvw", target: "_blank"},
+      {id: 4, title: 'Resume', icon: 'mdi-file-account', ref: "https://1drv.ms/b/s!AoUvcKZ5_MGigtYAgNVoR42oBb5JtQ?e=e8S7TB", target: "_blank"},
     ],
     icons: [
       {id:1, icon:'mdi-github', link: 'https://github.com/sohbanm'},
@@ -101,11 +101,6 @@ a.scroll:hover {
   padding: 0.2em;
 } 
 
-h1{
-  font-family: Monolith-This-Font, Verdana, sans-serif;
-  margin: auto;
-}
-
 .v-icon{
   margin: 0 0.2em 0 0.2em;
 }
@@ -122,11 +117,14 @@ a button{
 }
 
 h1{
-  margin-left:15%;
+  /* margin-left:15%; */
+  margin-left:5vh;
+  margin-top: 2vh;
   font-family: 'Raleway', sans-serif;
+  
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1264px) {
    button {
     display: none;
   }

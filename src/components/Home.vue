@@ -2,18 +2,18 @@
   <div style="color:white;width: 85%;" class="center">
     
     <v-row>
-      <v-col cols="1">
+      <v-col cols="2" style="text-align:center">
         <div v-for="social in icons" :key=icons.id>
           <a :href=social.link target="_blank">
-            <button class="iconButton" style="padding:0"><v-icon size="100" style="color:white;">{{social.icon}}</v-icon> </button>
+            <!-- <button class="iconButton" style="padding:0"><v-icon size="100" style="color:white;">{{social.icon}}</v-icon> </button> -->
+            <button class="iconButton" style="padding:0"><v-icon class="icon">{{social.icon}}</v-icon> </button>
           </a>
         </div>
       </v-col>
 
-      <v-col>
-        <span style="font-size:5.7em;text-align: left;">
-        
-        Sohban Elahi Malik
+      <v-col cols="10">
+        <span class="name">
+          Sohban Elahi Malik
         </span>
         <div style="text-align:left;margin-left: 18vh;">
           <h2>York University '25, HBsc. Computer Science Student</h2>
@@ -46,7 +46,7 @@
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap');
 *{
   font-family: 'Prompt', sans-serif;
@@ -64,5 +64,21 @@
   background: #19bc8b52;
   color:rgb(0, 0, 0);
   border: 0.1em solid #ccc;
+}
+.icon{
+  color:white;
+  font-size: 13vh;
+  
+  // @media screen and (max-width: 1264px){
+  //   font-size: 60px;
+  // }
+}
+.name{
+  font-size:5.7em;
+  text-align: left;
+
+  @media (max-width: 1264px){
+    font-size: 3em;
+  }
 }
 </style>

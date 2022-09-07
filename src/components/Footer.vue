@@ -56,13 +56,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 strong{
     color:black;    
     margin-left: 30vh;
     font-family: 'Raleway', sans-serif;
+
+    @media (max-width: 960px){
+    margin-left: 10vh;
+  }
 }
 a{
     text-decoration: none;
