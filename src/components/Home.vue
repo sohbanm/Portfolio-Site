@@ -1,11 +1,10 @@
 <template>
-  <div style="color:white;width: 85%;" class="center">
+  <div style="color:white;width: 85%;" class="mx-auto text-center pa-8">
     
     <v-row>
-      <v-col cols="2" style="text-align:center">
+      <v-col cols="2" class="mx-auto">
         <div v-for="social in icons" :key=icons.id>
           <a :href=social.link target="_blank">
-            <!-- <button class="iconButton" style="padding:0"><v-icon size="100" style="color:white;">{{social.icon}}</v-icon> </button> -->
             <button class="iconButton" style="padding:0"><v-icon class="icon">{{social.icon}}</v-icon> </button>
           </a>
         </div>
@@ -47,31 +46,41 @@
 
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap');
 *{
   font-family: 'Prompt', sans-serif;
+  color:black;
 }
 .center {
-  margin: auto;
-  width: 50%;;
-  padding: 0.8em;
   text-align: center;
 }
 .iconButton{
   border: 0.1em solid rgba(255, 255, 255, 0);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 .iconButton:hover{
-  background: #19bc8b52;
-  color:rgb(0, 0, 0);
-  border: 0.1em solid #ccc;
+  // background: #19bc8b52;
+  background: black;
+  .icon{
+  color: white;
+}
+  
 }
 .icon{
-  color:white;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  color:black;
   font-size: 13vh;
   
-  // @media screen and (max-width: 1264px){
-  //   font-size: 60px;
-  // }
+  @media screen and (max-width: 1264px){
+    font-size: 60px;
+  }
 }
 .name{
   font-size:5.7em;

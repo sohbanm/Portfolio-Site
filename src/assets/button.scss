@@ -15,7 +15,8 @@
 /* // Size can also be negative; see how it's smaller than the element */
 .raise:hover,
 .raise:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em #19bc8b;
+  // box-shadow: 0 0.5em 0.5em -0.4em #19bc8b;
+  box-shadow: 0 0.5em 0.5em -0.4em #F2EBCF;
   transform: translateY(-0.25em);
 }
 

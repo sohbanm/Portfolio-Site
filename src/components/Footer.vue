@@ -14,8 +14,8 @@
 
             <v-spacer></v-spacer>
 
-            <v-btn class="mx-4" color="grey" onMouseOver="this.style.color='#00F2FF'" v-scrollanimation>
-                <a href="mailto:sohbanelahimalik@gmail.com">
+            <v-btn class="mx-4" color="grey" onMouseOver="this.style.color='#FFFB00'" v-scrollanimation>
+                <a href="mailto:sohbanelahimalik@gmail.com" class="raise">
                     <v-icon size="2.5em" style="color:black;">
                     mdi-email
                     </v-icon>
@@ -28,10 +28,10 @@
                 :key="icon"
                 class="mx-4"
                 color="grey"
-                onMouseOver="this.style.color='#00F2FF'"
+                onMouseOver="this.style.color='#FFFB00'"
                 v-scrollanimation
             >
-            <a :href=icon.link target="_blank">
+            <a :href=icon.link target="_blank" class="raise">
               <v-icon size="2.5em">
                 {{ icon.icon }}
               </v-icon>
@@ -57,8 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-
+// @import './assets/button.scss';
 strong{
     color:black;    
     margin-left: 30vh;
