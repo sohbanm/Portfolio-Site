@@ -64,7 +64,7 @@
       <v-row class="justify-center">
         <v-col md="4" cols="12" class="v-col">
           <!-- <hr> -->
-          <a href="https://github.com/sohbanm/Task-Manager-Web-Application" target="_blank" class="a">
+          <a href="https://github.com/sohbanm/Portfolio-Site" target="_blank" class="a">
             <h3>Portfolio Site</h3>
             <h4>This is my portfolio site to display all my current projects and was my first real project into web development</h4>
           </a>
@@ -88,7 +88,7 @@
         </v-col>
         <v-col md="4" cols="12" class="v-col">
           <!-- <hr> -->
-          <a href="https://github.com/sohbanm/Task-Manager-Web-Application" target="_blank" class="a">
+          <a href="https://github.com/sohbanm/ASL-Translator" target="_blank" class="a">
             <h3>Sign Language Translator</h3>
             <h4>This is a web app I made at Hack the Valley Hackathon, which gives a video demo of each word in an input sentence</h4>
           </a>
