@@ -15,7 +15,7 @@
           Sohban Elahi Malik
         </span>
         <div style="text-align:left;margin-left: 18vh;">
-          <h2>York University '25, HBsc. Computer Science Student</h2>
+          <h2>York University '24, HBsc. Computer Science Student</h2>
           <!-- make name of university a hyperlink to yorks site -->
           <p>
           I am currently a sophmore at York University in Toronto, Ontario. 
