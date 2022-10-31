@@ -9,11 +9,11 @@
       scroll-threshold="1"
     >
       <v-row>
-        <v-col>
+        <v-col class="mx-auto">
           <h1><b>Portfolio</b></h1>
         </v-col>
 
-        <div v-for="button in items" :key=items.id>
+        <div v-for="button in items" :key=items.id class="buttons">
           <v-col>
             <a :href=button.ref :target=button.target style="color:white">
               <button class="raise">
@@ -134,15 +134,16 @@ h1{
   margin-left:5vh;
   margin-top: 2vh;
   font-family: 'Raleway', sans-serif;
-  
 }
 
 @media screen and (max-width: 1264px) {
-   button {
+   .buttons {
     display: none;
   }
+  h1{
+    margin-left: 0;
+  }
 }
-
 v-app-bar-nav-icon{
   margin-top: 250vh;
 }

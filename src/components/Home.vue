@@ -1,8 +1,8 @@
 <template>
-  <div style="color:white;width: 85%;" class="mx-auto text-center pa-8">
+  <div class="mx-auto text-center home">
     
-    <v-row>
-      <v-col cols="2" class="mx-auto">
+    <v-row no-gutters>
+      <v-col cols="2" xs="5" class="mx-auto text-center">
         <div v-for="social in icons" :key=icons.id>
           <a :href=social.link target="_blank">
             <button class="iconButton" style="padding:0"><v-icon class="icon">{{social.icon}}</v-icon> </button>
@@ -10,11 +10,11 @@
         </div>
       </v-col>
 
-      <v-col cols="10">
+      <v-col cols="10" xs="9">
         <span class="name">
           Sohban Elahi Malik
         </span>
-        <div style="text-align:left;margin-left: 18vh;">
+        <div class="details">
           <h2>York University '24, HBsc. Computer Science Student</h2>
           <!-- make name of university a hyperlink to yorks site -->
           <p>
@@ -50,6 +50,11 @@
   font-family: 'Prompt', sans-serif;
   color:black;
 }
+.home{
+  color:white;
+  width: 85%;
+  padding: 32px;
+}
 .center {
   text-align: center;
 }
@@ -77,17 +82,29 @@
   transition: all 500ms ease;
   color:black;
   font-size: 13vh;
-  
-  @media screen and (max-width: 1264px){
-    font-size: 60px;
-  }
 }
 .name{
   font-size:5.7em;
   text-align: left;
-
-  @media (max-width: 1264px){
-    font-size: 3em;
-  }
 }
+.details{
+  text-align: left;
+  margin-left: 18vh;
+}
+
+
+@media screen and (max-width: 1264px){
+  .icon{font-size: 60px;}
+  .name{font-size: 3em;}
+  
+  .details{margin-left:0;}
+  .home{width: 95%;}
+}
+
+@media screen and (max-width: 576px){
+  .icon{font-size: 50px;}
+}
+
+
+
 </style>
