@@ -9,11 +9,11 @@
         class="flex"
         
       >
-        <v-card-title class="white">
-            <strong>Contact Info</strong>
+        <v-card-title class="white text-center">
+          <strong>Contact Info</strong>
 
-            <v-spacer></v-spacer>
-
+          <v-spacer></v-spacer>
+          <div class="justify-center width">
             <v-btn class="mx-4" color="grey" onMouseOver="this.style.color='#FFFB00'" v-scrollanimation>
                 <a href="mailto:sohbanelahimalik@gmail.com" class="raise">
                     <v-icon size="2.5em" style="color:black;">
@@ -31,13 +31,13 @@
                 onMouseOver="this.style.color='#FFFB00'"
                 v-scrollanimation
             >
-            <a :href=icon.link target="_blank" class="raise">
-              <v-icon size="2.5em">
-                {{ icon.icon }}
-              </v-icon>
-            </a>
-          </v-btn>
-
+              <a :href=icon.link target="_blank" class="raise">
+                <v-icon size="2.5em">
+                  {{ icon.icon }}
+                </v-icon>
+              </a>
+            </v-btn>
+          </div>
         </v-card-title>
 
       </v-card>
@@ -78,6 +78,12 @@ a{
 .enter {
   opacity: 1;
   transform: scale(1) rotateZ(0deg);
+}
+
+@media screen and (max-width: 768px){
+  strong{display: none;}
+  .spacer{flex-grow: 0 !important;}
+  .width{width:100%}
 }
 
 </style>
