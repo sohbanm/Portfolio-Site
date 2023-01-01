@@ -31,6 +31,8 @@
     <v-main class="main" style="color:black">
       <Home id="Home"></Home>
 
+      <Timeline></Timeline>
+
       <div style="text-align:center;margin: 25vh 0 1vh 0;">
         <a href="#Projects" class="scroll">Projects</a>
       </div>
@@ -67,6 +69,7 @@ import Projects from './components/Projects.vue';
 import Home from './components/Home.vue';
 import Footer from './components/Footer.vue';
 import Skills from './components/Skills.vue';
+import Timeline from './components/Timeline.vue';
 
 
 export default {
@@ -83,7 +86,7 @@ export default {
       {id:2, icon: 'mdi-linkedin', link: 'https://www.linkedin.com/in/sohban-e-malik/'},
     ]
   }),
-  components: { Projects, Home, Footer, Skills },
+  components: { Projects, Home, Footer, Skills,Timeline },
 };
 </script>
 
