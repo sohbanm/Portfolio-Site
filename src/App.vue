@@ -15,7 +15,7 @@
 
         <div v-for="button in items" :key=items.id class="buttons">
           <v-col>
-            <a :href=button.ref :target=button.target style="color:white">
+            <a :href=button.ref style="color:white">
               <button class="raise">
                 <v-icon class="v-icon" >{{button.icon}}</v-icon>{{button.title}}
               </button>
@@ -75,11 +75,11 @@ import Timeline from './components/Timeline.vue';
 export default {
   data: () => ({ 
     items: [
-      {id: 1, title: 'Home', icon: 'mdi-home-outline', ref: "#", target: ""},
-      {id: 2, title: 'Projects', icon: "mdi-xml", ref: "#Projects", target: ""},
-      {id: 3, title: 'Skills', icon: "mdi-tools", ref: "#Skills", target: ""},
-      {id: 4, title: 'Contact', icon: 'mdi-card-account-mail', ref: "#Contact", target: ""},
-      {id: 5, title: 'Resume', icon: 'mdi-file-account', ref: "https://1drv.ms/b/s!AoUvcKZ5_MGigtYAgNVoR42oBb5JtQ?e=e8S7TB", target: "_blank"},
+      {id: 1, title: 'Home', icon: 'mdi-home-outline', ref: "#"},
+      {id: 2, title: 'Projects', icon: "mdi-xml", ref: "#Projects"},
+      {id: 3, title: 'Skills', icon: "mdi-tools", ref: "#Skills"},
+      {id: 4, title: 'Contact', icon: 'mdi-card-account-mail', ref: "#Contact"},
+      {id: 5, title: 'Resume', icon: 'mdi-file-account', ref: "https://drive.google.com/file/d/1emRMxSMQzJyHCY3j2zUQJoomu0hnve8a/view?usp=share_link"}
     ],
     icons: [
       {id:1, icon:'mdi-github', link: 'https://github.com/sohbanm'},
