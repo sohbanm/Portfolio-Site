@@ -12,7 +12,7 @@
 
       <v-col cols="10" xs="9">
         <span class="name">
-          Sohban Elahi Malik
+          Sohban Malik
         </span>
         <div class="details">
           <h2>York University '24, HBSc. Computer Science Student</h2>
