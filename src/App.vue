@@ -50,11 +50,11 @@
       <Skills></Skills>
       
 
-      <div class="text-center" style="margin-top:20vh">
+      <!-- <div class="text-center" style="margin-top:20vh">
         <a href="#Contact" class="scroll">Contact</a>
-      </div>
+      </div> -->
       <!-- This line is for spacing -->
-      <div style="margin:55vh 0 0 0"></div> 
+      <!-- <div style="margin:55vh 0 0 0"></div>  -->
 
       <Footer id="Contact"></Footer>
     </v-main>
