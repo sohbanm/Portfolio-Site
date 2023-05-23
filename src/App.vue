@@ -79,7 +79,7 @@ export default {
       {id: 2, title: 'Projects', icon: "mdi-xml", ref: "#Projects"},
       {id: 3, title: 'Skills', icon: "mdi-tools", ref: "#Skills"},
       {id: 4, title: 'Contact', icon: 'mdi-card-account-mail', ref: "#Contact"},
-      {id: 5, title: 'Resume', icon: 'mdi-file-account', ref: "https://drive.google.com/file/d/1MgjgdrBJbOCEQz2pj3XMInxbHpq0lLpR/view?usp=share_link"}
+      {id: 5, title: 'Resume', icon: 'mdi-file-account', ref: "https://drive.google.com/file/d/1yoO0AlxDmah2Q3Ly08zEOjNC4uKs7hLX/view?usp=sharing"}
     ],
     icons: [
       {id:1, icon:'mdi-github', link: 'https://github.com/sohbanm'},
