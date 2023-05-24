@@ -27,15 +27,23 @@
 export default {
   data: () => ({
     jobs: [
-      {color: 'amber', interval: 'Sept 2022 - Present', title: 'Junior Web Developer',
-      description:'I am currently doing a work/study part-time at a Company named Walk With Web and am learning many new technologies and working professionally as a Web Developer',
+      {color: 'red', interval: 'May 2023 - Present', title:'Software Developer Intern',
+        description:'During this summer I am interning as a Software Developer at Verto Health where I am working with a bigger organization and learning more industry standards/practices',
+        technologies: `
+        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" />
+        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" />
+        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
+        `
+      },
+      {color: 'orange', interval: 'Sept 2022 - April 2023', title: 'Junior Web Developer',
+      description:'In my second year I was doing a work/study program part-time at a Company named Walk With Web and learned many new technologies and worked professionally as a Web Developer',
       technologies:`
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
       `
       },
-      {color: 'orange', interval: 'June 2022 - August 2022', title:'Information Technology Intern',
+      {color: 'amber', interval: 'June 2022 - August 2022', title:'Information Technology Intern',
       description:'I had previously worked as an Information Technology Intern at the Ahmadiyya Muslim Jama`at in Canada, where I had a number of instances where I could showcase my technical ability',
       technologies: `
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
