@@ -15,12 +15,10 @@
           Sohban Malik
         </span>
         <div class="details">
-          <h2>York University '25, HBSc. Computer Science Student</h2>
+          <h2>Junior @ York University '25, HBSc. Computer Science Student</h2>
           <!-- make name of university a hyperlink to yorks site -->
           <p>
-          I am currently a sophmore at York University in Toronto, Ontario. 
-          <br>
-          I'm very passionate about computer science, and am preparing to gain valuable experience as I am constantly attaining new skills.
+          I am a very passionate developer and am always looking to expand and strengthen my skillset and so that I can be an excellent Software Engineer. I have currently dived into fullstack development and will now be focusing on learning to implement more complex and creative backend systems. I am sure my understanding of core concepts in Software Engineering as well as my growth-oriented mindset should be beneficial to your team.
           </p> 
         </div>
         
