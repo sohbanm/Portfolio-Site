@@ -35,7 +35,7 @@ export default {
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
         `
       },
-      {color: 'orange', interval: 'Sept 2022 - April 2023', title: 'Junior Web Developer',
+      {color: 'orange', interval: 'Sept 2022 - April 2023', title: 'Web Developer',
       description:'In my second year I was doing a work/study program part-time at a Company named Walk With Web and learned many new technologies and worked professionally as a Web Developer',
       technologies:`
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
@@ -44,7 +44,7 @@ export default {
       `
       },
       {color: 'amber', interval: 'June 2022 - August 2022', title:'Information Technology Intern',
-      description:'I had previously worked as an Information Technology Intern at the Ahmadiyya Muslim Jama`at in Canada, where I had a number of instances where I could showcase my technical ability',
+      description:'I had previously worked as an Information Technology Intern at the Ahmadiyya Muslim Community in Canada, where I had a number of instances where I could showcase my technical ability',
       technologies: `
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
