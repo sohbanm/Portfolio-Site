@@ -9,7 +9,7 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "14:08"
+      time: "14:09"
     open-pull-requests-limit: 10
     ignore:
       - dependency-name: "*"
@@ -17,9 +17,8 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "sunday"
-      time: "09:00"
+      interval: "daily"
+      time: "14:10"
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
