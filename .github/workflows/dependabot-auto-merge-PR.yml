@@ -1,0 +1,30 @@
+name: automatically merge dependabot PR's
+on:
+    schedule:
+        -   cron: "50 14 * * *"
+jobs:
+    fetch-PR:
+        name: fetch-PR
+        runs-on: ubuntu-latest
+        steps:
+            -   uses: actions/checkout@v2
+                with: 
+                    fetch-depth: 0
+    
+    auto-merge-dependabot:
+        name: Auto merge dependabot pr
+        timeout-minutes: 10
+        needs: [ fetch-PR ]
+        if: ${{ github.actor == 'dependabot[bot]' }}
+        runs-on: ubuntu-latest
+        permissions:
+            pull-requests: write
+            contents: write
+        steps: 
+            -   name: Merge PR from dependabot
+                uses: fastify/github-action-merge-dependabot@v3.6.4
+                with:
+                    github-token: ${{  secrets.GITHUB_TOKEN }}
+                    target: minor
+                    merge-method: rebase
+            
