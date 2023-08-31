@@ -3,7 +3,7 @@ name: Dependabot auto-approve
 on:
     schedule:
         # Run this task everyday at 08:00am, Monday to Friday
-        - cron: "7 17 * * 0"
+        - cron: "13 17 * * 0"
 
 permissions:
   pull-requests: write
