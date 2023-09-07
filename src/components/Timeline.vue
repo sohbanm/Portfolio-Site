@@ -27,7 +27,7 @@
 export default {
   data: () => ({
     jobs: [
-      {color: 'red', interval: 'May 2023 - Present', title:'Software Developer Intern',
+      {color: 'red', interval: 'May 2023 - August 2023', title:'Software Developer Intern',
         description:'During this summer I am interning as a Software Developer at Verto Health where I am working with a bigger organization and learning more industry standards/practices',
         technologies: `
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" />
