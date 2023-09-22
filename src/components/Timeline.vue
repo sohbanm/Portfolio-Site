@@ -27,8 +27,8 @@
 export default {
   data: () => ({
     jobs: [
-      {color: 'red', interval: 'May 2023 - August 2023', title:'Software Developer Intern',
-        description:'During this summer I am interning as a Software Developer at Verto Health where I am working with a bigger organization and learning more industry standards/practices',
+      {color: 'red', interval: 'May 2023 - August 2023', title:'Software Engineer Intern',
+        description:'In my second year summer I interned as a Software Engineer at Verto Health, where I worked with a bigger organization and learned more industry standards/practices, as well as new fullstack web languages and frameworks.',
         technologies: `
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" />
