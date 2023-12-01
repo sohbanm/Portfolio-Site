@@ -34,7 +34,7 @@
     data(){
       return {
         icons: [
-          {id: 1, icon: "mdi-linkedin", link:'https://www.linkedin.com/in/sohban-e-malik/'},
+          {id: 1, icon: "mdi-linkedin", link:'https://www.linkedin.com/in/sohban/'},
           {id: 2, icon: "mdi-github", link:'https://github.com/sohbanm'},                    
         ]
       }
