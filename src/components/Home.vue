@@ -36,6 +36,7 @@
         icons: [
           {id: 1, icon: "mdi-linkedin", link:'https://www.linkedin.com/in/sohban/'},
           {id: 2, icon: "mdi-github", link:'https://github.com/sohbanm'},                    
+          {id: 3, icon: "mdi-email", link:'mailto:sohbanelahimalik@gmail.com'},                    
         ]
       }
     }
@@ -79,7 +80,7 @@
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
   color:black;
-  font-size: 13vh;
+  font-size: 5.5em;
 }
 .name{
   font-size:5.7em;
@@ -101,6 +102,7 @@
 
 @media screen and (max-width: 576px){
   .icon{font-size: 50px;}
+  .details{margin-top: 10vh;}
 }
 
 

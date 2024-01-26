@@ -1,5 +1,6 @@
 <template> 
   <v-app id="main"> 
+    
     <v-app-bar
       class="primary"
       app
@@ -7,6 +8,7 @@
       dark
       scroll-target="#scrolling-techniques-5"
       scroll-threshold="1"
+      height="75"
     >
       <v-row>
         <v-col class="mx-auto">
@@ -15,7 +17,7 @@
 
         <div v-for="button in items" :key=items.id class="buttons">
           <v-col>
-            <a :href=button.ref style="color:white">
+            <a :href=button.ref style="color:white" :target=button.target >
               <button class="raise">
                 <v-icon class="v-icon" >{{button.icon}}</v-icon>{{button.title}}
               </button>
@@ -48,15 +50,7 @@
       <div id="Skills" style="text-align:center;margin: 25vh 0 5vh 0;"><p style="opacity:0">L</p> </div>
 
       <Skills></Skills>
-      
 
-      <!-- <div class="text-center" style="margin-top:20vh">
-        <a href="#Contact" class="scroll">Contact</a>
-      </div> -->
-      <!-- This line is for spacing -->
-      <!-- <div style="margin:55vh 0 0 0"></div>  -->
-
-      <Footer id="Contact"></Footer>
     </v-main>
 
     
@@ -67,7 +61,6 @@
 
 import Projects from './components/Projects.vue'; 
 import Home from './components/Home.vue';
-import Footer from './components/Footer.vue';
 import Skills from './components/Skills.vue';
 import Timeline from './components/Timeline.vue';
 
@@ -75,18 +68,17 @@ import Timeline from './components/Timeline.vue';
 export default {
   data: () => ({ 
     items: [
-      {id: 1, title: 'Home', icon: 'mdi-home-outline', ref: "#"},
-      {id: 2, title: 'Projects', icon: "mdi-xml", ref: "#Projects"},
-      {id: 3, title: 'Skills', icon: "mdi-tools", ref: "#Skills"},
-      {id: 4, title: 'Contact', icon: 'mdi-card-account-mail', ref: "#Contact"},
-      {id: 5, title: 'Resume', icon: 'mdi-file-account', ref: "https://1drv.ms/b/s!AoUvcKZ5_MGig8FTVCU_RL_2cOnCVQ?e=PBWzTD"}
+      {id: 1, title: 'Home', icon: 'mdi-home-outline', ref: "#" , target: ""},
+      {id: 2, title: 'Projects', icon: "mdi-xml", ref: "#Projects" , target: ""},
+      {id: 3, title: 'Skills', icon: "mdi-tools", ref: "#Skills" , target: ""},
+      {id: 4, title: 'Resume', icon: 'mdi-file-account', ref: "https://1drv.ms/b/s!AoUvcKZ5_MGig8FTVCU_RL_2cOnCVQ?e=PBWzTD", target: "_blank"}
     ],
     icons: [
       {id:1, icon:'mdi-github', link: 'https://github.com/sohbanm'},
       {id:2, icon: 'mdi-linkedin', link: 'https://www.linkedin.com/in/sohban-e-malik/'},
     ]
   }),
-  components: { Projects, Home, Footer, Skills,Timeline },
+  components: { Projects, Home, Skills, Timeline },
 };
 </script>
 
