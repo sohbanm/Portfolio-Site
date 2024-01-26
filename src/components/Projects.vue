@@ -6,7 +6,7 @@
       <v-row class="justify-center">
         <v-col md="4" cols="12" class="v-col">
           
-          <a href="https://github.com/sohbanm/ASL-Translator" target="_blank" class="a">
+          <a href="https://github.com/sohbanm/Login-System" target="_blank" class="a">
             <h3>Login App</h3>
             <h4>Leveraged React.js and TailwindCSS to create a Login System with features such as user register/login with JWT encryption, reset/forget password with OTP code through email, profile picture</h4>
           </a>
@@ -211,9 +211,9 @@
 
   export default {
     name: 'Home',
-    data(){
-      return {}
-    }
+    // data(){
+    //   return {}
+    // }
   }
 </script>
 
