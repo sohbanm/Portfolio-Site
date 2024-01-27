@@ -1,7 +1,7 @@
 <template>
     <div class="skills mx-auto">
         <p style="font-size:5em">Skills</p>
-        <v-row>
+        <v-row v-scrollanimation>
             <v-col md="4" cols="12" class="skills-border">
                 <div class="skill-section">
                     <h2>Languages</h2>
