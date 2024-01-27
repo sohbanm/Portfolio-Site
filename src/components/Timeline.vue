@@ -6,15 +6,15 @@
             <v-timeline-item
             v-for="(year, i) in jobs"
             :key="i"
-            :color="year.color"
+            color="accent"
             small
             v-scrollanimation
             >
               <template v-slot:opposite>
-                  <span :class="`headline font-weight-bold ${year.color}--text`">{{year.interval}}</span>
+                  <span :class="`headline font-weight-light ${year.color}--text`">{{year.interval}}</span>
               </template>
               <div class="py-4">
-                  <h2 :class="`headline font-weight-light mb-4 ${year.color}--text`">{{year.title}}</h2>
+                  <h2 class="`headline font-weight-bold mb-4`">{{year.title}}</h2>
                   <div>{{year.description}}</div>
                   <div class="text-left images" v-html="year.technologies"></div>
               </div>
@@ -27,7 +27,7 @@
 export default {
   data: () => ({
     jobs: [
-      {color: 'red', interval: 'May 2023 - August 2023', title:'Software Engineer Intern',
+      {color: 'accent', interval: 'May 2023 - August 2023', title:'Software Engineer Intern',
         description:'In my second year summer I interned as a Software Engineer at Verto Health, where I worked with a bigger organization and learned more industry standards/practices, as well as new fullstack web languages and frameworks.',
         technologies: `
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" />
@@ -37,7 +37,7 @@ export default {
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
         `
       },
-      {color: 'orange', interval: 'Sept 2022 - April 2023', title: 'Web Developer',
+      {color: 'accent', interval: 'Sept 2022 - April 2023', title: 'Web Developer',
       description:'In my second year I was doing a work/study program part-time at a Company named Walk With Web and learned many new technologies and worked professionally as a Web Developer',
       technologies:`
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
@@ -46,14 +46,15 @@ export default {
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
       `
       },
-      {color: 'amber', interval: 'June 2022 - August 2022', title:'Information Technology Intern',
+      {color: 'accent', interval: 'June 2022 - August 2022', title:'Information Technology Intern',
       description:'I had previously worked as an Information Technology Intern at the Ahmadiyya Muslim Community in Canada, where I had a number of instances where I could showcase my technical ability',
       technologies: `
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
       `
       },
-    // colors: pink, amber, orange, green, cyan
+    // colors: pink, amber, orange, green, cyan, indigo, teal, blue
+    //other colors are custom made in vuetify.js file
     ],
   }),
 }

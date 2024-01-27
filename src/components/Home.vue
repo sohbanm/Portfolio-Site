@@ -58,20 +58,10 @@
   text-align: center;
 }
 .iconButton{
+  // color: "#282828";
   border: 0.1em solid rgba(255, 255, 255, 0);
   -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
   transition: all 500ms ease;
-}
-.iconButton:hover{
-  // background: #19bc8b52;
-  background: black;
-  .icon{
-  color: white;
-}
-  
 }
 .icon{
   -webkit-transition: all 500ms ease;
@@ -79,9 +69,16 @@
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
-  color:black;
+  color: #282828;
   font-size: 5.5em;
 }
+.iconButton:hover{
+  background: #282828;
+  .icon{
+  color: white;
+  }
+}
+
 .name{
   font-size:5.7em;
   text-align: left;

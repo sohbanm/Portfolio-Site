@@ -35,7 +35,7 @@
 
       <Timeline></Timeline>
 
-      <div style="text-align:center;margin: 25vh 0 1vh 0;">
+      <div style="text-align:center;margin: 20vh 0 1vh 0;">
         <a href="#Projects" class="scroll">Projects</a>
       </div>
 

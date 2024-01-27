@@ -3,7 +3,7 @@
         <p style="font-size:5em">Skills</p>
         <v-row v-scrollanimation>
             <v-col md="4" cols="12" class="skills-border">
-                <div class="skill-section">
+                <div class="skill-section accent">
                     <h2>Languages</h2>
                     <h4 class="mb-3">
                         Python <br>
@@ -20,7 +20,7 @@
 
             </v-col>
             <v-col md="4" cols="12" class="skills-border">
-                <div class="skill-section">
+                <div class="skill-section accent">
                     <h2>Frameworks and Libraries</h2>
                     <h4 class="mb-3">
                         VueJS <br>
@@ -36,7 +36,7 @@
                 </div>
             </v-col>
             <v-col md="4" cols="12" class="skills-border">
-                <div class="skill-section">
+                <div class="skill-section accent">
                     <h2>Developer Tools</h2>
                     <h4 class="mb-3">
                         MongoDB <br>
@@ -72,7 +72,6 @@
         padding: 1rem;
 
         .skill-section{
-        background-color: #282828;
         height: 100%;
         color: white;
         border-radius: 25px;
