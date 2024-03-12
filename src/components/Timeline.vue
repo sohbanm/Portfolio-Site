@@ -27,6 +27,11 @@
 export default {
   data: () => ({
     jobs: [
+      {color: 'accent', interval: 'Feb 2024 - April 2024', title:'Research Software Engineer',
+        description:'In my third year second semester I have begun a part time research position at York University. In this position I will be leading the research and development of automating the creation of Invoice generation after orders are placed on a 3rd party software.',
+        technologies: `
+        `
+      },
       {color: 'accent', interval: 'May 2023 - August 2023', title:'Software Engineer Intern',
         description:'In my second year summer I interned as a Software Engineer at Verto Health, where I worked with a bigger organization and learned more industry standards/practices, as well as new fullstack web languages and frameworks.',
         technologies: `
