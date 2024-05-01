@@ -1,10 +1,18 @@
 <template>
   <div class="app center">
     <p style="font-size:5em">Projects</p>
+    <div v-if="$vuetify.breakpoint.mdAndUp" class="d-flex">
+      <h2 class="my-auto">Filter by project type:</h2>
+      <button @click="toggleAll" class="">ALL</button>
+      <button @click="toggleAPI" :class="{ active: api_filter }">API</button>
+      <button @click="toggleWeb" :class="{ active: web_filter }">WEB</button>
+      <button @click="toggleData" :class="{ active: data_filter }">DATA/ML</button>
+      <button @click="toggleMisc" :class="{ active: misc_filter }">MISC.</button>
+    </div>
     <div v-scrollanimation>
       <v-row class="justify-center">
 
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showAPI" class="v-col">
           
           <a href="https://github.com/sohbanm/Login-System" target="_blank" class="a">
             <h3>Login App</h3>
@@ -28,7 +36,7 @@
             </svg>
           </div>
         </v-col>
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showAPI" class="v-col">
           <a href="https://github.com/sohbanm/ASL-Translator" target="_blank" class="a">
             <h3>Sign Language Translator</h3>
             <h4>This is a web app I made at Hack the Valley Hackathon, which gives a video demo of each word in an input sentence</h4>
@@ -51,7 +59,7 @@
             </svg>
           </div>
         </v-col>
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showData" class="v-col">
           <a href="https://github.com/sohbanm/Chess-Predictive-Model" target="_blank" class="a">
             <h3>Chess Predictive Model</h3>
             <h4>This is some data analysis I did in Jupyter Notebooks for a class project where I cleaned and transformed the data to create meaningful connections</h4>
@@ -75,7 +83,7 @@
           </div>
         </v-col>
 
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showAPI" class="v-col">
           <a href="https://github.com/sohbanm/FileStorage" target="_blank" class="a">
             <h3>AWS File Storage</h3>
             <h4>This is a Java Spring Boot API which allows the user to store files in an AWS S3 bucket in the cloud.</h4>
@@ -92,7 +100,7 @@
             </svg>
           </div>
         </v-col>
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showData" class="v-col">
           <a href="https://github.com/sohbanm/Word-Importance-MapReduce" target="_blank" class="a">
             <h3>Word Importance Analysis</h3>
             <h4>This is a Big Data project where I implemented 3 MapReduce Jobs to find the TF-IDF score of a word for Large Data sets, demonstrating the importance of a word.</h4>
@@ -112,7 +120,7 @@
             </svg>
           </div>
         </v-col>
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showWeb" class="v-col">
           <a href="https://github.com/sohbanm/Task-Manager-Web-Application" target="_blank" class="a">
             <h3>Task Manager Web App</h3>
             <h4>This a basic Web Application for adding, deleting, and editing tasks to be displayed in a table, stored with a database</h4>
@@ -136,7 +144,7 @@
           </div>
         </v-col>
 
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showWeb" class="v-col">
           <a href="https://github.com/sohbanm/Portfolio-Site" target="_blank" class="a">
             <h3>Portfolio Site</h3>
             <h4>This is my portfolio site to display all my current projects and was my first real project into web development</h4>
@@ -159,7 +167,7 @@
             </svg>
           </div>
         </v-col>
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showMisc" class="v-col">
           <a href="https://github.com/sohbanm/Squid-Arcade" target="_blank" class="a">
             <h3>Squid Arcade</h3>
             <h4>This is an app with a series of mini-games inspired by the popular Netflix series “Squid Game”. The app will includes 2 different games: Red Light Green Light and Marbles</h4>
@@ -176,7 +184,7 @@
             </svg>
           </div>
         </v-col>
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showData" class="v-col">
           <a href="https://github.com/sohbanm/Online-Learning-Analysis" target="_blank" class="a">
             <h3>Online Learning Analysis</h3>
             <h4>This is some data analysis I did in Jupyter Notebooks for a class project where I cleaned and transformed the data to create meaningful connections</h4>
@@ -197,7 +205,7 @@
           </div>
         </v-col>
         
-        <v-col md="4" cols="12" class="v-col">
+        <v-col md="4" cols="12" v-if="showMisc" class="v-col">
           <a href="https://github.com/sohbanm/MaliBot" target="_blank" class="a">
             <h3>MaliBot</h3>
             <h4>Discord Bot created in Python using repl.it database able to create and manage tournaments by creating brackets, adding teams, and keeping track of score</h4>
@@ -219,9 +227,76 @@
 
   export default {
     name: 'Home',
-    // data(){
-    //   return {}
-    // }
+    data() {
+      return {
+        api_filter: false,
+        web_filter: false,
+        data_filter: false,
+        misc_filter: false,
+        filters: {
+          'api': false,
+          'web': false,
+          'data': false,
+          'misc': false,
+        },
+        filter: false,
+      };
+    },
+    computed: {
+      showAPI() {
+        return !this.filter || this.filters['api'];
+      },
+      showWeb() {
+        return !this.filter || this.filters['web'];
+      },
+      showData() {
+        return !this.filter || this.filters['data'];
+      },
+      showMisc() {
+        return !this.filter || this.filters['misc'];
+      },
+    },
+    methods: {
+      toggleAPI(){
+        this.api_filter = !this.api_filter;
+        if(!this.filter){
+          this.filter = true;
+        }
+        this.filters['api'] = !this.filters['api'];
+      },
+      toggleWeb(){
+        this.web_filter = !this.web_filter;
+        if(!this.filter){
+          this.filter = true;
+        }
+        this.filters['web'] = !this.filters['web'];
+      },
+      toggleData(){
+        this.data_filter = !this.data_filter;
+        if(!this.filter){
+          this.filter = true;
+        }
+        this.filters['data'] = !this.filters['data'];
+      },
+      toggleMisc(){
+        this.misc_filter = !this.misc_filter;
+        if(!this.filter){
+          this.filter = true;
+        }
+        this.filters['misc'] = !this.filters['misc'];
+      },
+      toggleAll(){
+        this.api_filter = false;
+        this.web_filter = false;
+        this.data_filter = false;
+        this.misc_filter = false;
+        this.filter = false;
+        this.filters['api'] = false;
+        this.filters['web'] = false;
+        this.filters['data'] = false;
+        this.filters['misc'] = false;
+      },
+    }
   }
 </script>
 
@@ -275,5 +350,11 @@ hr{
   @media (max-width: 960px){
     border-top: none;
   }
+}
+
+.active{
+  border: none;
+  background-color: black;
+  color: #CDCDCD;
 }
 </style>
