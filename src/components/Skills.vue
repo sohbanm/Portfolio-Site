@@ -39,13 +39,14 @@
                 <div class="skill-section accent">
                     <h2>Developer Tools</h2>
                     <h4 class="mb-3">
-                        MongoDB <br>
-                        Jupyter <br>
-                        AWS S3 <br>
-                        Postman <br>
                         MySQL <br>
+                        MongoDB <br>
+                        Azure <br>
+                        AWS S3 <br>
                         Git <br>
+                        Postman <br>
                         Linux <br>
+                        Jupyter <br>
                     </h4>
                 </div>
 

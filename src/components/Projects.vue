@@ -12,7 +12,7 @@
     <div v-scrollanimation>
       <v-row class="justify-center">
 
-        <v-col md="4" cols="12" v-if="showAPI" class="v-col">
+        <v-col md="4" cols="12" v-if="showAPI || showWeb" class="v-col">
           
           <a href="https://github.com/sohbanm/Login-System" target="_blank" class="a">
             <h3>Login App</h3>
@@ -36,7 +36,7 @@
             </svg>
           </div>
         </v-col>
-        <v-col md="4" cols="12" v-if="showAPI" class="v-col">
+        <v-col md="4" cols="12" v-if="showAPI || showWeb" class="v-col">
           <a href="https://github.com/sohbanm/ASL-Translator" target="_blank" class="a">
             <h3>Sign Language Translator</h3>
             <h4>This is a web app I made at Hack the Valley Hackathon, which gives a video demo of each word in an input sentence</h4>
