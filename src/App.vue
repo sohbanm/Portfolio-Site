@@ -1,8 +1,9 @@
 <template> 
   <v-app id="main"> 
     
-    <v-app-bar
-      class="primary"
+    <!-- <v-app-bar class="primary navbar" -->
+    <v-app-bar class="navbar"
+      scroll-behaviour="elevate"
       app
       fixed
       dark
@@ -12,12 +13,12 @@
     >
       <v-row>
         <v-col class="mx-auto">
-          <h1><b>Portfolio</b></h1>
+          <!-- <h1><b>Portfolio</b></h1> -->
         </v-col>
 
-        <div v-for="button in items" :key=items.id class="buttons">
-          <v-col>
-            <a :href=button.ref style="color:white" :target=button.target >
+        <div v-for="button in items" :key=items.id class="buttons blur">
+          <v-col class="col-1">
+            <a :href=button.ref :target=button.target >
               <button class="raise">
                 <v-icon class="v-icon" >{{button.icon}}</v-icon>{{button.title}}
               </button>
@@ -33,10 +34,10 @@
     <v-main class="main" style="color:black">
       <Home id="Home"></Home>
 
-      <Timeline></Timeline>
+      <Timeline id="Experience"></Timeline>
 
       <div style="text-align:center;margin: 20vh 0 1vh 0;">
-        <a href="#Projects" class="scroll">Projects</a>
+        <a href="#Projects" class="scroll">Projects <v-icon>mdi-arrow-down-bold</v-icon></a>
       </div>
 
       <div id="Projects" style="text-align:center;margin: 25vh 0 0 0;"><p style="opacity:0">L</p> </div>
@@ -44,7 +45,7 @@
       <Projects></Projects>
 
       <div style="text-align:center;margin: 15vh 0 1vh 0;">
-        <a href="#Skills" class="scroll">Skills</a>
+        <a href="#Skills" class="scroll">Skills <v-icon>mdi-arrow-down-bold</v-icon></a>
       </div>
 
       <div id="Skills" style="text-align:center;margin: 25vh 0 5vh 0;"><p style="opacity:0">L</p> </div>
@@ -69,9 +70,10 @@ export default {
   data: () => ({ 
     items: [
       {id: 1, title: 'Home', icon: 'mdi-home-outline', ref: "#" , target: ""},
-      {id: 2, title: 'Projects', icon: "mdi-xml", ref: "#Projects" , target: ""},
-      {id: 3, title: 'Skills', icon: "mdi-tools", ref: "#Skills" , target: ""},
-      {id: 4, title: 'Resume', icon: 'mdi-file-account', ref: "https://drive.google.com/file/d/1fXrt4ylluRuHF0wPB0_kKokwiTNl7RNa/view?usp=sharing", target: "_blank"}
+      {id: 2, title: 'Experience', icon: "mdi-list-box-outline", ref: "#Experience" , target: ""},
+      {id: 3, title: 'Projects', icon: "mdi-xml", ref: "#Projects" , target: ""},
+      {id: 4, title: 'Skills', icon: "mdi-tools", ref: "#Skills" , target: ""},
+      {id: 5, title: 'Resume', icon: 'mdi-file-account', ref: "https://drive.google.com/file/d/1fXrt4ylluRuHF0wPB0_kKokwiTNl7RNa/view?usp=sharing", target: "_blank"}
     ],
     icons: [
       {id:1, icon:'mdi-github', link: 'https://github.com/sohbanm'},
@@ -89,6 +91,10 @@ export default {
 
 html {
   scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 a.scroll {
@@ -123,6 +129,11 @@ button{
 }
 a button{
   font-size: 1.3em;
+  color: rgb(255, 255, 255);
+}
+
+.v-icon{
+  color: black;
 }
 
 h1{

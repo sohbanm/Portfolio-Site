@@ -24,11 +24,11 @@
                     <h2>Frameworks and Libraries</h2>
                     <h4 class="mb-3">
                         VueJS <br>
+                        Spring Boot <br>
                         ReactJS <br>
                         Flask <br>
                         AngularTS <br>
                         Rails <br>
-                        Spring Boot <br>
                         ExpressJS <br>
                         Scikit-learn <br>
                         Pandas/NumPy <br>
@@ -40,6 +40,7 @@
                     <h2>Developer Tools</h2>
                     <h4 class="mb-3">
                         MySQL <br>
+                        PostgreSQL <br>
                         MongoDB <br>
                         Azure <br>
                         AWS S3 <br>

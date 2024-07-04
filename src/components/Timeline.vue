@@ -1,6 +1,7 @@
 <template>
     <div class="mx-auto" style="width:80%">
         <p class="head">Experience</p>
+        <h3 class="font-italic">Projected 2+ years of Relevant Work Experience</h3>
           
         <v-timeline>
             <v-timeline-item
@@ -27,6 +28,14 @@
 export default {
   data: () => ({
     jobs: [
+      {color: 'accent', interval: 'Sep 2024 - Dec 2024', title:'Software Engineer Intern — Royal Bank of Canada',
+        description:'In my 3rd year fall I am interning at RBC — one of the most prestigious banks in Canada — where my team will be leading the development of an AI driven Virtual Assistant, and I will be learning & developing ML and NLU strategies.',
+        technologies: `
+        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+        `
+      },
       {color: 'accent', interval: 'May 2024 - August 2024', title:'Software Engineer Intern — PointClickCare',
         description:'In my 3rd year summer I am interning at another healthcare company called PointClickCare where I have the chance to work in a big corporation assigned to a specific team on a Microservice project for Notification Services.',
         technologies: `
