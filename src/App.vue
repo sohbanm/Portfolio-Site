@@ -17,7 +17,7 @@
         </v-col>
 
         <div v-for="button in items" :key=items.id class="buttons blur">
-          <v-col class="col-1">
+          <v-col class="col">
             <a :href=button.ref :target=button.target >
               <button class="raise">
                 <v-icon class="v-icon" >{{button.icon}}</v-icon>{{button.title}}
@@ -129,7 +129,7 @@ button{
 }
 a button{
   font-size: 1.3em;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .v-icon{
