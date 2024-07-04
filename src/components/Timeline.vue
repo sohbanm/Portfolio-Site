@@ -61,8 +61,8 @@ export default {
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
         `
       },
-      {color: 'accent', interval: 'September 2022 - April 2023', title: 'Web Developer — Walk With Web',
-      description:'In my second year I was doing a work/study program part-time at a Company named Walk With Web and learned many new technologies and worked professionally as a Web Developer',
+      {color: 'accent', interval: 'September 2022 - April 2023', title: 'Software Engineer Student — Walk With Web',
+      description:'In my second year I was doing a work/study program part-time at a Company named Walk With Web and learned many new technologies and worked professionally as a Software Engineer Student',
       technologies:`
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
       <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
