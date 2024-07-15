@@ -19,8 +19,9 @@
         <div v-for="button in items" :key=items.id class="buttons blur">
           <v-col class="col">
             <a :href=button.ref :target=button.target >
-              <button class="raise">
-                <v-icon class="v-icon" >{{button.icon}}</v-icon>{{button.title}}
+              <button class="raise text-white">
+                <v-icon class="v-icon text-white">{{button.icon}}</v-icon>
+                {{button.title}}
               </button>
             </a>
           </v-col>
@@ -118,6 +119,9 @@ a.scroll:hover {
 
 .v-icon{
   margin: 0 0.2em 0 0.2em;
+}
+.text-white{
+  color:white !important;
 }
 </style>
 
