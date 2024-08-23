@@ -25,6 +25,7 @@
                     <h4 class="mb-3">
                         VueJS <br>
                         Spring Boot <br>
+                        Django <br>
                         ReactJS <br>
                         Flask <br>
                         AngularTS <br>

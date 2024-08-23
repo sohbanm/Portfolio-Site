@@ -29,7 +29,7 @@ export default {
   data: () => ({
     jobs: [
       {color: 'accent', interval: 'Sep 2024 - Dec 2024', title:'Software Engineer Intern — Royal Bank of Canada',
-        description:'In my 3rd year fall I am interning at RBC — one of the most prestigious banks in Canada — where my team will be leading the development of an AI driven Virtual Assistant, and I will be learning & developing ML and NLU strategies.',
+        description:'In my 3rd year fall I am interning at RBC — one of the most prestigious banks in Canada — where I will be assisting the development of an AI driven Virtual Assistant, and I will be learning & developing ML and NLU strategies.',
         technologies: `
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
@@ -37,7 +37,7 @@ export default {
         `
       },
       {color: 'accent', interval: 'May 2024 - August 2024', title:'Software Engineer Intern — PointClickCare',
-        description:'In my 3rd year summer I am interning at another healthcare company called PointClickCare where I have the chance to work in a big corporation assigned to a specific team on a Microservice project for Notification Services.',
+        description:'In my 3rd year summer I am interning at another healthcare company called PointClickCare where I have the chance to work in a Unicorn assigned to a specific team in Messaging specifically Outbound notifications.',
         technologies: `
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
@@ -52,7 +52,7 @@ export default {
         `
       },
       {color: 'accent', interval: 'May 2023 - August 2023', title:'Software Engineer Intern — Verto Health',
-        description:'In my second year summer I interned as a Software Engineer at Verto Health, where I worked with a bigger organization and learned more industry standards/practices, as well as new fullstack web languages and frameworks.',
+        description:'In my second year summer I interned as a Software Engineer at Verto Health, where I worked with an organized startup and learned more industry standards/practices, as well as new fullstack web languages and frameworks.',
         technologies: `
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" />
