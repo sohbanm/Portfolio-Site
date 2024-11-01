@@ -12,8 +12,7 @@
                         TypeScript <br>
                         PHP <br>
                         Ruby <br>
-                        C <br>
-                        Bash <br>
+                        C/C++ <br>
                         SQL <br>
                     </h4>
                 </div>
@@ -28,6 +27,7 @@
                         Django <br>
                         ReactJS <br>
                         Flask <br>
+                        FastAPI <br>
                         AngularTS <br>
                         Rails <br>
                         ExpressJS <br>
@@ -44,6 +44,8 @@
                         PostgreSQL <br>
                         MongoDB <br>
                         Azure <br>
+                        Ollama <br>
+                        Langchain <br>
                         AWS S3 <br>
                         Git <br>
                         Postman <br>

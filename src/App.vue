@@ -74,7 +74,7 @@ export default {
       {id: 2, title: 'Experience', icon: "mdi-list-box-outline", ref: "#Experience" , target: ""},
       {id: 3, title: 'Projects', icon: "mdi-xml", ref: "#Projects" , target: ""},
       {id: 4, title: 'Skills', icon: "mdi-tools", ref: "#Skills" , target: ""},
-      {id: 5, title: 'Resume', icon: 'mdi-file-account', ref: "https://drive.google.com/file/d/1fXrt4ylluRuHF0wPB0_kKokwiTNl7RNa/view?usp=sharing", target: "_blank"}
+      {id: 5, title: 'Resume', icon: 'mdi-file-account', ref: "https://drive.google.com/file/d/1fXrt4ylluRuHF0wPB0_kKokwiTNl7RNa/view?usp=drive_link", target: "_blank"}
     ],
     icons: [
       {id:1, icon:'mdi-github', link: 'https://github.com/sohbanm'},

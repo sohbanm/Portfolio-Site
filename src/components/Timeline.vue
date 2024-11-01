@@ -34,6 +34,7 @@ export default {
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
         `
       },
       {color: 'accent', interval: 'May 2024 - August 2024', title:'Software Engineer Intern — PointClickCare',
