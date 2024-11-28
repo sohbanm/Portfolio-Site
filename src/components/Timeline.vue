@@ -29,7 +29,7 @@ export default {
   data: () => ({
     jobs: [
       {color: 'accent', interval: 'Sep 2024 - Dec 2024', title:'Software Engineer Intern — Royal Bank of Canada',
-        description:'In my 3rd year fall I am interning at RBC — one of the most prestigious banks in Canada — where I will be assisting the development of an AI driven Virtual Assistant, and I will be learning & developing ML and NLU strategies.',
+        description:'In my 4th year fall I am interning at RBC — one of the most prestigious banks in Canada — where I will be assisting the development of an AI driven Virtual Assistant, and I will be learning & developing ML and NLP strategies.',
         technologies: `
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
