@@ -31,14 +31,14 @@ export default {
       {color: 'accent', interval: 'Sep 2024 - Dec 2024', title:'Software Engineer Intern — Royal Bank of Canada',
         description:'In my 4th year fall I am interning at RBC — one of the most prestigious banks in Canada — where I will be assisting the development of an AI driven Virtual Assistant, and I will be learning & developing ML and NLP strategies.',
         technologies: `
-        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+        <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" />
         `
       },
       {color: 'accent', interval: 'May 2024 - August 2024', title:'Software Engineer Intern — PointClickCare',
-        description:'In my 3rd year summer I am interning at another healthcare company called PointClickCare where I have the chance to work in a Unicorn assigned to a specific team in Messaging specifically Outbound notifications.',
+        description:'In my 3rd year summer I am interning at another healthcare company called PointClickCare where I have the chance to work in a Unicorn assigned to a Platform team working to push a new service for notifications',
         technologies: `
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
         <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
